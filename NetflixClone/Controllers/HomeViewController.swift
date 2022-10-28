@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
         forCellReuseIdentifier: CollectionViewTableViewCell.identifier)
         return table
     }()
-
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -23,7 +23,8 @@ class HomeViewController: UIViewController {
         homeFeedTable.delegate = self
         homeFeedTable.dataSource = self
         
-        homeFeedTable.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
+        let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
+        homeFeedTable.tableHeaderView = headerView
     }
     
     override func viewDidLayoutSubviews() {
@@ -31,7 +32,7 @@ class HomeViewController: UIViewController {
         homeFeedTable.frame = view.bounds
     }
 }
-
+ 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 20
