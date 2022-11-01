@@ -25,7 +25,7 @@ class CollectionViewTableViewCell: UITableViewCell {
         
         collectionView.dataSource = self
         collectionView.delegate = self
-    }
+    } 
     
     required init?(coder: NSCoder) {
         fatalError()
