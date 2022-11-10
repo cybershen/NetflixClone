@@ -1,4 +1,4 @@
 # NetflixClone
 
-MVVM architecture
+MVVM architecture, 
 Themoviedb API 
