@@ -54,6 +54,8 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.tintColor = .white
     }
 }
+
+//MARK: - Table View Delegate
  
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
