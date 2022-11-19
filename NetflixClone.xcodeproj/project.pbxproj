@@ -11,6 +11,7 @@
 		DE517A60291A552700316112 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = DE517A5F291A552700316112 /* SDWebImage */; };
 		DE517A62291A552700316112 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DE517A61291A552700316112 /* SDWebImageMapKit */; };
 		DE71CD732912FA910023659F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71CD722912FA910023659F /* Extensions.swift */; };
+		DE8E273429294A310090296C /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E273329294A310090296C /* SearchResultsViewController.swift */; };
 		DEADD0582922582F0092005F /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADD0572922582F0092005F /* TitleTableViewCell.swift */; };
 		DEADD05A29225BEE0092005F /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADD05929225BEE0092005F /* TitleViewModel.swift */; };
 		DEC83178290BD51A001AB60A /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC83177290BD51A001AB60A /* HeroHeaderUIView.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		DE517A5C291A538200316112 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
 		DE71CD722912FA910023659F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DE8E273329294A310090296C /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		DEADD0572922582F0092005F /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		DEADD05929225BEE0092005F /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
 		DEC83177290BD51A001AB60A /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE8E273529294A640090296C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DEFF7D1F2907D48900FD4A3F /* MainTabBarViewController.swift */,
+				DEFF7D302907D8E900FD4A3F /* HomeViewController.swift */,
+				DEFF7D322907D93F00FD4A3F /* UpcomingViewController.swift */,
+				DEFF7D342907D97800FD4A3F /* SearchViewController.swift */,
+				DEFF7D362907D99600FD4A3F /* DownloadsViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DE8E273629294A760090296C /* General */ = {
+			isa = PBXGroup;
+			children = (
+				DE8E273329294A310090296C /* SearchResultsViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 		DEFF7D0F2907D48900FD4A3F = {
 			isa = PBXGroup;
 			children = (
@@ -100,11 +122,8 @@
 		DEFF7D2F2907D8C700FD4A3F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DEFF7D1F2907D48900FD4A3F /* MainTabBarViewController.swift */,
-				DEFF7D302907D8E900FD4A3F /* HomeViewController.swift */,
-				DEFF7D322907D93F00FD4A3F /* UpcomingViewController.swift */,
-				DEFF7D342907D97800FD4A3F /* SearchViewController.swift */,
-				DEFF7D362907D99600FD4A3F /* DownloadsViewController.swift */,
+				DE8E273629294A760090296C /* General */,
+				DE8E273529294A640090296C /* Core */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -238,6 +257,7 @@
 				DEC83178290BD51A001AB60A /* HeroHeaderUIView.swift in Sources */,
 				DEFF7D372907D99600FD4A3F /* DownloadsViewController.swift in Sources */,
 				DEFF7D1C2907D48900FD4A3F /* AppDelegate.swift in Sources */,
+				DE8E273429294A310090296C /* SearchResultsViewController.swift in Sources */,
 				DE71CD732912FA910023659F /* Extensions.swift in Sources */,
 				DEFF7D1E2907D48900FD4A3F /* SceneDelegate.swift in Sources */,
 				DEFF7D332907D93F00FD4A3F /* UpcomingViewController.swift in Sources */,
