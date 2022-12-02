@@ -82,8 +82,10 @@ extension DownloadsViewController: UITableViewDelegate, UITableViewDataSource {
                 case .failure(let error):
                     print(error.localizedDescription)
                 }
-                self?.titles.remove(at: indexPath.row)
-                tableView.deleteRows(at: [indexPath], with: .fade)
+                DispatchQueue.main.async {
+                    self?.titles.remove(at: indexPath.row)
+                    tableView.deleteRows(at: [indexPath], with: .fade)
+                }
             }
         default:
             break
