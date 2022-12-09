@@ -13,8 +13,10 @@
 		DE517A5D291A538200316112 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE517A5C291A538200316112 /* TitleCollectionViewCell.swift */; };
 		DE517A60291A552700316112 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = DE517A5F291A552700316112 /* SDWebImage */; };
 		DE517A62291A552700316112 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DE517A61291A552700316112 /* SDWebImageMapKit */; };
-		DE71CD732912FA910023659F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71CD722912FA910023659F /* Extensions.swift */; };
 		DE8E273429294A310090296C /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E273329294A310090296C /* SearchResultsViewController.swift */; };
+		DE9EDE7F2943597700396443 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9EDE7E2943597700396443 /* Constants.swift */; };
+		DE9EDE83294359A400396443 /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9EDE82294359A400396443 /* String + Extension.swift */; };
+		DE9EDE8729436D9E00396443 /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9EDE8629436D9E00396443 /* UIImage + Extension.swift */; };
 		DEADD0582922582F0092005F /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADD0572922582F0092005F /* TitleTableViewCell.swift */; };
 		DEADD05A29225BEE0092005F /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADD05929225BEE0092005F /* TitleViewModel.swift */; };
 		DEC83178290BD51A001AB60A /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC83177290BD51A001AB60A /* HeroHeaderUIView.swift */; };
@@ -39,8 +41,10 @@
 		DE162F3C293253CA009AD5F6 /* TitlePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewController.swift; sourceTree = "<group>"; };
 		DE2D76D82932590700C32F43 /* TitlePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewModel.swift; sourceTree = "<group>"; };
 		DE517A5C291A538200316112 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
-		DE71CD722912FA910023659F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DE8E273329294A310090296C /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		DE9EDE7E2943597700396443 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DE9EDE82294359A400396443 /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
+		DE9EDE8629436D9E00396443 /* UIImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
 		DEADD0572922582F0092005F /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		DEADD05929225BEE0092005F /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
 		DEC83177290BD51A001AB60A /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
@@ -96,6 +100,14 @@
 			path = General;
 			sourceTree = "<group>";
 		};
+		DE9EDE7D2943596900396443 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DE9EDE7E2943597700396443 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		DEFF7D0F2907D48900FD4A3F = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +127,7 @@
 		DEFF7D1A2907D48900FD4A3F /* NetflixClone */ = {
 			isa = PBXGroup;
 			children = (
+				DE9EDE7D2943596900396443 /* Helpers */,
 				DEFF7D3C2907EF8300FD4A3F /* Managers */,
 				DEFF7D3B2907EF6D00FD4A3F /* Resources */,
 				DEFF7D3A2907EF3A00FD4A3F /* Models */,
@@ -172,7 +185,8 @@
 		DEFF7D3B2907EF6D00FD4A3F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DE71CD722912FA910023659F /* Extensions.swift */,
+				DE9EDE82294359A400396443 /* String + Extension.swift */,
+				DE9EDE8629436D9E00396443 /* UIImage + Extension.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -264,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEADD0582922582F0092005F /* TitleTableViewCell.swift in Sources */,
+				DE9EDE7F2943597700396443 /* Constants.swift in Sources */,
 				DEFF7D352907D97800FD4A3F /* SearchViewController.swift in Sources */,
 				DE517A5D291A538200316112 /* TitleCollectionViewCell.swift in Sources */,
 				DEEA644C293A6EE100962CED /* DataPersistenceManager.swift in Sources */,
@@ -275,12 +290,13 @@
 				DEFF7D372907D99600FD4A3F /* DownloadsViewController.swift in Sources */,
 				DEFF7D1C2907D48900FD4A3F /* AppDelegate.swift in Sources */,
 				DE8E273429294A310090296C /* SearchResultsViewController.swift in Sources */,
-				DE71CD732912FA910023659F /* Extensions.swift in Sources */,
 				DE154827292EAF5200EF28B9 /* YoutubeSearchResponse.swift in Sources */,
 				DEFF7D1E2907D48900FD4A3F /* SceneDelegate.swift in Sources */,
+				DE9EDE8729436D9E00396443 /* UIImage + Extension.swift in Sources */,
 				DE2D76D92932590700C32F43 /* TitlePreviewViewModel.swift in Sources */,
 				DEFF7D332907D93F00FD4A3F /* UpcomingViewController.swift in Sources */,
 				DE162F3D293253CA009AD5F6 /* TitlePreviewViewController.swift in Sources */,
+				DE9EDE83294359A400396443 /* String + Extension.swift in Sources */,
 				DECA4AB8291124DD00D787F5 /* Title.swift in Sources */,
 				DEFF7D312907D8E900FD4A3F /* HomeViewController.swift in Sources */,
 				DEADD05A29225BEE0092005F /* TitleViewModel.swift in Sources */,

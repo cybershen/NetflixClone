@@ -25,27 +25,28 @@ class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Search"
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationItem.largeTitleDisplayMode = .always
-        
-        view.backgroundColor = .systemBackground
-        
+        view.backgroundColor = .black
         view.addSubview(discoverTable)
+        
         discoverTable.delegate = self
         discoverTable.dataSource = self
         
-        navigationItem.searchController = searchController
-        navigationController?.navigationBar.tintColor = .white
-        
         fetchDiscoverMovies()
-        
-        searchController.searchResultsUpdater = self
+        configureNavBar()
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         discoverTable.frame = view.bounds
+    }
+    
+    private func configureNavBar() {
+        title = "Search"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationItem.largeTitleDisplayMode = .always
+        navigationItem.searchController = searchController
+        navigationController?.navigationBar.tintColor = .white
+        searchController.searchResultsUpdater = self
     }
     
     private func fetchDiscoverMovies() {
@@ -110,6 +111,8 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
 }
+
+//MARK: - SearchResultsViewControllerDelegate
 
 extension SearchViewController: UISearchResultsUpdating, SearchResultsViewControllerDelegate {
     func updateSearchResults(for searchController: UISearchController) {

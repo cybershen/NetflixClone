@@ -37,10 +37,6 @@ class HomeViewController: UIViewController {
         homeFeedTable.dataSource = self
         
         configureNavbar()
-        
-        headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
-        homeFeedTable.tableHeaderView = headerView
-        
         configureHeroHeaderView()
     }
     
@@ -50,6 +46,9 @@ class HomeViewController: UIViewController {
     }
     
     private func configureHeroHeaderView() {
+        headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
+        homeFeedTable.tableHeaderView = headerView
+        
         APICaller.shared.getTrendingMovies { [weak self] result in
             switch result {
             case .success(let titles):
@@ -77,7 +76,7 @@ class HomeViewController: UIViewController {
 }
 
 //MARK: - Table View Delegate
- 
+
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return sectionTitles.count
@@ -177,6 +176,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return sectionTitles[section]
     }
 }
+
+//MARK: - CollectionTableViewDelegate
 
 extension HomeViewController: CollectionViewTableViewCellDelegate {
     func CollectionViewTableViewCellDidTapCell(_ cell: CollectionViewTableViewCell, viewModel: TitlePreviewViewModel) {
