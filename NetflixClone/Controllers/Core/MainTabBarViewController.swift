@@ -10,7 +10,8 @@ import UIKit
 class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemYellow
+        view.backgroundColor = .systemBackground
+        overrideUserInterfaceStyle = .dark
         
         let vc1 = UINavigationController(rootViewController: HomeViewController())
         let vc2 = UINavigationController(rootViewController: UpcomingViewController())
@@ -26,6 +27,7 @@ class MainTabBarViewController: UITabBarController {
         vc2.title = Constants.MainVCTitle.comingSoon
         vc3.title = Constants.MainVCTitle.topSearch
         vc4.title = Constants.MainVCTitle.downloads
+        
                                        
         tabBar.tintColor = .label
                                        

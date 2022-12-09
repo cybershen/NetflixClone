@@ -68,10 +68,6 @@ class HeroHeaderUIView: UIView {
         
         heroImageView.sd_setImage(with: url)
     }
-    
-    private func configureDownloadButton(button: UIButton) {
-        
-    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
