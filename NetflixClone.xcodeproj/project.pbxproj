@@ -18,6 +18,8 @@
 		DE9EDE83294359A400396443 /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9EDE82294359A400396443 /* String + Extension.swift */; };
 		DE9EDE8729436D9E00396443 /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9EDE8629436D9E00396443 /* UIImage + Extension.swift */; };
 		DE9EDE892943738600396443 /* TrendingTitleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9EDE882943738600396443 /* TrendingTitleResponse.swift */; };
+		DE9EDED12944D7B400396443 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DE9EDED02944D7B400396443 /* Lottie */; };
+		DE9EDED32944D82D00396443 /* 50097-netflix-logo.json in Resources */ = {isa = PBXBuildFile; fileRef = DE9EDED22944D82D00396443 /* 50097-netflix-logo.json */; };
 		DEADD0582922582F0092005F /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADD0572922582F0092005F /* TitleTableViewCell.swift */; };
 		DEADD05A29225BEE0092005F /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADD05929225BEE0092005F /* TitleViewModel.swift */; };
 		DEC83178290BD51A001AB60A /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC83177290BD51A001AB60A /* HeroHeaderUIView.swift */; };
@@ -47,6 +49,7 @@
 		DE9EDE82294359A400396443 /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
 		DE9EDE8629436D9E00396443 /* UIImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
 		DE9EDE882943738600396443 /* TrendingTitleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingTitleResponse.swift; sourceTree = "<group>"; };
+		DE9EDED22944D82D00396443 /* 50097-netflix-logo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "50097-netflix-logo.json"; sourceTree = "<group>"; };
 		DEADD0572922582F0092005F /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		DEADD05929225BEE0092005F /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
 		DEC83177290BD51A001AB60A /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 			files = (
 				DE517A62291A552700316112 /* SDWebImageMapKit in Frameworks */,
 				DE517A60291A552700316112 /* SDWebImage in Frameworks */,
+				DE9EDED12944D7B400396443 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +146,7 @@
 				DEFF7D262907D48A00FD4A3F /* LaunchScreen.storyboard */,
 				DEFF7D292907D48A00FD4A3F /* Info.plist */,
 				DEEA6448293A6B0100962CED /* NetflixCloneModel.xcdatamodeld */,
+				DE9EDED22944D82D00396443 /* 50097-netflix-logo.json */,
 			);
 			path = NetflixClone;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 			packageProductDependencies = (
 				DE517A5F291A552700316112 /* SDWebImage */,
 				DE517A61291A552700316112 /* SDWebImageMapKit */,
+				DE9EDED02944D7B400396443 /* Lottie */,
 			);
 			productName = NetflixClone;
 			productReference = DEFF7D182907D48900FD4A3F /* NetflixClone.app */;
@@ -253,6 +259,7 @@
 			mainGroup = DEFF7D0F2907D48900FD4A3F;
 			packageReferences = (
 				DE517A5E291A552700316112 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				DE9EDECF2944D7B400396443 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = DEFF7D192907D48900FD4A3F /* Products */;
 			projectDirPath = "";
@@ -268,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE9EDED32944D82D00396443 /* 50097-netflix-logo.json in Resources */,
 				DEFF7D282907D48A00FD4A3F /* LaunchScreen.storyboard in Resources */,
 				DEFF7D252907D48A00FD4A3F /* Assets.xcassets in Resources */,
 			);
@@ -521,6 +529,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		DE9EDECF2944D7B400396443 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -533,6 +549,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DE517A5E291A552700316112 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImageMapKit;
+		};
+		DE9EDED02944D7B400396443 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE9EDECF2944D7B400396443 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 
